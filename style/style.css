@@ -1,3 +1,5 @@
+@import url(breadcrumb.css);
+@import url(../accordeon/acc.css);
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -20,6 +22,12 @@ h3 {
   line-height: 24px;
 }
 
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
 a {
   font-size: 16px;
   font-weight: 400;
@@ -37,6 +45,15 @@ ul {
 .green {
   color: white;
   background: #10B582;
+}
+
+.white {
+  background: white;
+  color: #353A5A;
+}
+.white a {
+  color: #353A5A;
+  font-weight: 500;
 }
 
 .wrapper {
@@ -84,7 +101,7 @@ a:hover {
 header {
   color: white;
   background: #10B582;
-  height: 800px;
+  padding-bottom: 120px;
 }
 header .start__ul {
   color: white;
@@ -92,6 +109,12 @@ header .start__ul {
   justify-content: center;
   padding-top: 40px;
   margin-bottom: 55px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__body {
@@ -138,10 +161,31 @@ header .start__ul {
   white-space: nowrap;
 }
 
+.header__white__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header__white__text h4 {
+  width: 870px;
+}
+.header__white__text h2 {
+  width: 809px;
+}
+.header__white__text img {
+  padding-bottom: 20px;
+}
+
 .teachnumber {
   display: flex;
   justify-content: space-between;
   padding: 120px 0px;
+}
+
+.teachnumber2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
 }
 
 .teachnumber__item {
@@ -197,6 +241,10 @@ header .start__ul {
 
 .block2-left {
   flex-basis: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
 }
 
 .block2__right {
@@ -228,6 +276,15 @@ header .start__ul {
   height: 226px;
 }
 
+.courses__block__wrapper2 {
+  background: #FDFDFD;
+  box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+  border-radius: 10px;
+  width: 270px;
+  height: 135px;
+  padding-bottom: 25px;
+}
+
 .courses__block {
   display: flex;
   flex-direction: column;
@@ -242,8 +299,33 @@ header .start__ul {
   height: 155px;
 }
 
+.courses__block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 15px;
+}
+.courses__block2 img {
+  height: 16px;
+}
+.courses__block2 .top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.courses__block2 h2 {
+  font-weight: 500;
+}
+
 .cta {
   background-image: url(../images/banner.jpg);
+  background-repeat: round;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+}
+
+.cta2 {
+  background-image: url(../images/course-page/banner.jpg);
   background-repeat: round;
   padding-bottom: 120px;
   margin-bottom: 120px;
@@ -256,6 +338,13 @@ header .start__ul {
   width: 508px;
   padding-left: 50%;
   padding-top: 120px;
+}
+
+.faq {
+  text-align: center;
+}
+.faq h1 {
+  padding-bottom: 60px;
 }
 
 .footer {

@@ -1,9 +1,13 @@
+@import url(breadcrumb.css);
+@import url(../accordeon/acc.css);
+
 body {
     font-family: 'Raleway', sans-serif;
 }
 h1 {font-size: 58px; font-weight: 500 ; line-height: 70px;}
 h2 {font-size: 16px; font-weight: 400 ; line-height: 24px;}
 h3 {font-size: 14px; font-weight: 400 ; line-height: 24px;}
+h4 {font-size: 22px; font-weight: 500 ; line-height: 28px;}
 a  {font-size: 16px; font-weight: 400 ;}
 .f5 {font-weight: 500;}
 
@@ -15,6 +19,14 @@ ul {
 .green {
     color: white;
     background: #10B582;
+}
+.white {
+    background: white;
+    color: #353A5A;
+    a {
+        color: #353A5A;
+        font-weight: 500;
+    }
 }
 .wrapper {
     max-width: 1170px;
@@ -64,14 +76,20 @@ a {
 header {
     color: white;
     background: #10B582;
-    height: 800px;
+    padding-bottom: 120px;
     .start__ul {
         color: white;
         gap: 40px;
         justify-content: center;
         padding-top: 40px;
         margin-bottom: 55px;
-        }}
+        }
+    }
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .header__body {
     display: flex;
@@ -116,11 +134,25 @@ header {
     }
 }
 
+.header__white__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h4 {width: 870px;}
+    h2 {width: 809px;}
+    img {padding-bottom: 20px;}
+}
+
 // Учитесь у лучших
 .teachnumber {
     display: flex;
     justify-content: space-between;
     padding: 120px 0px;
+}
+.teachnumber2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
 }
 .teachnumber__item {
     display: flex;
@@ -171,6 +203,10 @@ header {
 }
 .block2-left {
     flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
 }
 .block2__right {
     flex-basis: 500px;
@@ -200,6 +236,14 @@ header {
     width: 270px;
     height: 226px;
 }
+.courses__block__wrapper2 {
+    background: #FDFDFD;
+    box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+    border-radius: 10px;
+    width: 270px;
+    height: 135px;
+    padding-bottom: 25px;
+}
 .courses__block {
     display: flex;
     flex-direction: column;
@@ -213,10 +257,25 @@ header {
         height: 155px;
     }
 }
+.courses__block2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 15px;
+    img { height: 16px; }
+    .top { display: flex; gap: 8px; align-items: center;}
+    h2 {font-weight: 500;}
+}
 
 // Call To Action
 .cta {
     background-image: url(../images/banner.jpg);
+    background-repeat: round;
+    padding-bottom: 120px;
+    margin-bottom: 120px;
+}
+.cta2 {
+    background-image: url(../images/course-page/banner.jpg);
     background-repeat: round;
     padding-bottom: 120px;
     margin-bottom: 120px;
@@ -230,6 +289,11 @@ header {
     padding-top: 120px;
 }
 
+// Часто задаваемые вопросы
+.faq {
+    text-align: center;
+    h1 {padding-bottom: 60px;}
+}
 // Подвал
 .footer {
     display: flex;
