@@ -22,7 +22,7 @@ ul.breadcrumb li a {
     font-size: 14px;
 }
 
-ul.breadcrumb li a:hover{
+.breadcrumb li:last-child {
     text-decoration: none;
     opacity: 0.5;
     border-bottom: none;
