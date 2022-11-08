@@ -1,5 +1,6 @@
 @import url(breadcrumb.css);
 @import url(../accordeon/acc.css);
+@import url(media.css);
 
 html {
     overflow-x: hidden;
@@ -157,7 +158,8 @@ header {
 .teachnumber2 {
     display: flex;
     justify-content: space-between;
-    padding-top: 120px;
+    padding: 120px 0;
+    flex-wrap: wrap;
 }
 .teachnumber__item {
     display: flex;
@@ -213,7 +215,21 @@ header {
     gap: 20px;
     justify-content: space-around;
 }
+.block2-left2 {
+    flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
 .block2__right {
+    flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+.block2__right2 {
     flex-basis: 500px;
     display: flex;
     flex-direction: column;
@@ -347,6 +363,8 @@ header {
     }
 }
 
+
+// Адаптив 
 @media (max-width: 1100px) {
     .right img{ display: none; flex-basis: 0; }
     .right span { display: none; flex-basis: 0; }
@@ -361,15 +379,30 @@ header {
     .cta__text h1 {padding-right: 20%; font-size: 40px; line-height: 1.3;}
     .cta__text h3 {padding-right: 10%;}
     footer {padding: 0 2%;}
+    .white {padding: 0 2%;}
+    .teachnumber__item {padding-bottom: 20px;}
+    .block2 img {width: 80%;}
+    .block2-left {padding: 0 2%;}
+    .block2-left2 {padding: 0 2%;}
 }
 
 @media (max-width: 900px) {
-    .block2-left img {width: 100%;}
+    .block2-left2 img {width: 100%;}
+    .teachtext {flex-direction: column; ;}
+    .teachtext__left {align-items: center;}
     .cta {background-size: 100%; background-repeat: space; margin-bottom: 0;}
+    .cta2 {background-size: 100%; background-repeat: space; margin-bottom: 0;}
     .cta__text {padding-top: 10px;}
     .cta h3 {max-width: 300px;}
     .cta__text {
         .btn_y {margin-top: 0;}}
+    .header__white__text h4 {width: initial;}
+    .header__white__text h2 {width: initial;}
+    header {
+        ul {flex-wrap: wrap;}
+        padding-bottom: 40px;
+    }
+    .accordion__item {width: initial;}
 }
 
 @media (max-width: 800px) {
@@ -384,22 +417,23 @@ header {
 
 @media (max-width: 700px) {
     h1 {font-size: 30px; line-height: 1.1;}
-    header {
-        ul {flex-wrap: wrap;}
-        padding-bottom: 40px;
-    }
     .header__body .middle h2 {padding: 0;}
-    .teachnumber {padding: 40px 0 30px;}
+    .teachnumber {padding: 40px 0 30px; justify-content: center;}
+    .teachnumber2 {padding: 40px 0 30px; justify-content: center;}
     .teachtext {flex-direction: column; padding-bottom: 30px;}
     .teachtext__left {align-items: center; flex-basis: 0; }
     .block2 {justify-content: center; padding: 40px 0;}
     .block2__right {text-align: center; align-items: center;}
     .block2-left {display: none;}
+    .block2-left2 {text-align: center; align-items: center;}
+    .block2__right2 {display: none;}
     .popular {padding: 40px 0;}
     .cta {padding-bottom: 0;}
+    .cta2 {padding-bottom: 0;}
     .cta__text {padding-left: 50%;}
     .cta__text h1 {font-size: 30px; line-height: 1.1;}
     .footer__left {padding: 0 5%;}
+    .faq {padding-top: 40px;}
 }
 
 @media (max-width: 600px) {
@@ -412,10 +446,14 @@ header {
 }
 
 @media (max-width: 550px) {
+    .header__top img {display: none;}
     .cta {background: none;}
-    .cta__text {padding: 0; gap: 20px; text-align: center; align-items: center; width: fill;}
     .cta h1 {padding: 0;}
     .cta h3 {padding: 0;}
+    .cta2 {background: none;}
+    .cta2 h1 {padding: 0;}
+    .cta2 h3 {padding: 0;}
+    .cta__text {padding: 0; gap: 20px; text-align: center; align-items: center; width: fill;}
     footer .footer2 {flex-direction: column;}
     footer .footer2 span {flex-direction: column;}
 }
