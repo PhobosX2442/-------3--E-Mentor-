@@ -311,8 +311,8 @@ header .start__ul {
 .courses__block {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px 20px 0;
+  padding: 10px 20px 0;
+  gap: 5px;
 }
 .courses__block h4 {
   font-weight: 500;
@@ -458,22 +458,13 @@ header .start__ul {
   .cta__text h3 {
     padding-right: 10%;
   }
-  footer {
-    padding: 0 2%;
-  }
-  .white {
-    padding: 0 2%;
-  }
   .teachnumber__item {
     padding-bottom: 20px;
   }
   .block2 img {
     width: 80%;
   }
-  .block2-left {
-    padding: 0 2%;
-  }
-  .block2-left2 {
+  .wrapper {
     padding: 0 2%;
   }
 }
@@ -498,7 +489,7 @@ header .start__ul {
     margin-bottom: 0;
   }
   .cta__text {
-    padding-top: 10px;
+    padding: 10px 0;
   }
   .cta h3 {
     max-width: 300px;
@@ -530,6 +521,10 @@ header .start__ul {
   .cta__text {
     padding-left: 44%;
     gap: 2px;
+    justify-content: center;
+  }
+  .cta__text h1 {
+    font-size: 30px;
   }
   .footer__right {
     flex-wrap: wrap;
